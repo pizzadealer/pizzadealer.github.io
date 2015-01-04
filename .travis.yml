@@ -18,7 +18,7 @@ script:
 - git add .
 - git commit -m "New Data"
 - git fetch
-- git push origin data
+- git push origin data -f
 env:
   global:
     secure: J1plcCOMdcFi1S+SoNzIKq1klNFiRGeRZ8Vomh9Crq2bqfoizf8wHe+hMp3+K+zXI1gcF823+9z5ddvG9UWvNzGj4kjf3zSgoeSsvU/R9fV7UwZmyY+2FyjycUjDZPmVUQFEfxQEJDhiHuZ660rhzlKPL2UihOzowVjF+m7ZStU=
