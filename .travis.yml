@@ -11,7 +11,7 @@ before_script:
 script:
 - date +%s > updated
 - git checkout data
-- git pull
+- git fetch
 - git add .
 - git commit -m "New Data"
 - git push origin HEAD:data
