@@ -10,7 +10,7 @@ before_script:
 - git remote set-url origin https://github.com/nicolindemann/pizza.de-dealer.git
 - git fetch
 - git checkout -b data
-- git pull origin data --no-edit
+- git pull origin -q
 script:
 - date +%s > updated
 - git add .
