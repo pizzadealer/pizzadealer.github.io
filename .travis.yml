@@ -12,6 +12,7 @@ script:
 - date +%s > updated
 - git checkout data
 - git fetch
+- git pull
 - git add .
 - git commit -m "New Data"
 - git push origin HEAD:data
