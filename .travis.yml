@@ -7,6 +7,7 @@ before_script:
 script:
   - date +%s > updated
   - git checkout data
+  - git remote add origin https://github.com/nicolindemann/pizza.de-dealer.git
   - git add .
   - git commit -m "New Data"
   - git push origin
