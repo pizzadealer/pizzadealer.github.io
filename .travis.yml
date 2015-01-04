@@ -15,7 +15,8 @@ script:
 - date +%s > updated
 - git add .
 - git commit -m "New Data"
-- git fetch --no-edit
+- git fetch
+- git merge --no-edit
 - git push --set-upstream origin data
 env:
   global:
