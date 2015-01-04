@@ -4,7 +4,7 @@
   "description": "History of pizza.de deals",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "install": "node index.js"
   },
   "author": "Nico Lindemann <nico.lindemann@proux.de>",
   "license": "MIT",
