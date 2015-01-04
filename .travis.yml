@@ -1,13 +1,18 @@
 language: node_js
 node_js:
-  - '0.11'
+- '0.11'
 before_script:
-  - git config --global user.email "nico.lindemann@proux.de"
-  - git config --global user.name "Travis-CI"
+- git config --global user.email "nico.lindemann@proux.de"
+- git config --global user.name "Travis-CI"
+- git config --global push.default simple
+- git config credential.helper "store --file=.git/credentials"
+- echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 script:
-  - date +%s > updated
-  - git checkout data
-  - git remote add origin https://github.com/nicolindemann/pizza.de-dealer.git
-  - git add .
-  - git commit -m "New Data"
-  - git push origin
+- date +%s > updated
+- git checkout data
+- git add .
+- git commit -m "New Data"
+- git push -u origin
+env:
+  global:
+    secure: J1plcCOMdcFi1S+SoNzIKq1klNFiRGeRZ8Vomh9Crq2bqfoizf8wHe+hMp3+K+zXI1gcF823+9z5ddvG9UWvNzGj4kjf3zSgoeSsvU/R9fV7UwZmyY+2FyjycUjDZPmVUQFEfxQEJDhiHuZ660rhzlKPL2UihOzowVjF+m7ZStU=
