@@ -8,9 +8,9 @@ before_script:
 - git config credential.helper "store --file=.git/credentials"
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 - git remote set-url origin https://github.com/nicolindemann/pizza.de-dealer.git
-- git fetch
 - git checkout -b data
-- git push --set-upstream origin data
+- git fetch
+- git pull origin -q
 script:
 - date +%s > updated
 - git add .
