@@ -8,14 +8,14 @@ before_script:
 - git config credential.helper "store --file=.git/credentials"
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 - git remote set-url origin https://github.com/nicolindemann/pizza.de-dealer.git
+- git fetch
+- git checkout -b data
+- git pull origin data
 script:
 - date +%s > updated
-- git checkout data
-- git fetch
-- git pull
 - git add .
 - git commit -m "New Data"
-- git push origin HEAD:data
+- git push origin
 env:
   global:
     secure: J1plcCOMdcFi1S+SoNzIKq1klNFiRGeRZ8Vomh9Crq2bqfoizf8wHe+hMp3+K+zXI1gcF823+9z5ddvG9UWvNzGj4kjf3zSgoeSsvU/R9fV7UwZmyY+2FyjycUjDZPmVUQFEfxQEJDhiHuZ660rhzlKPL2UihOzowVjF+m7ZStU=
