@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - '0.11'
+before_script:
+  - git config --global user.email "nico.lindemann@proux.de"
+  - git config --global user.name "Travis-CI"
+script:
+  - date +%s > updated
+  - git checkout data
+  - git add .
+  - git commit -m "New Data"
