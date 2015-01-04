@@ -4,7 +4,6 @@
     var cheerio = require("cheerio");
     var fs = require('fs');
     var deliveryareas = require("./deliveryareas.json");
-
     for (var i = 0;i < deliveryareas.length;i++) {
         request({
             uri: "https://pizza.de/" + deliveryareas[i],
