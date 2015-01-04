@@ -9,3 +9,4 @@ script:
   - git checkout data
   - git add .
   - git commit -m "New Data"
+  - git push origin
