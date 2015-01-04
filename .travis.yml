@@ -6,6 +6,7 @@ before_script:
 - git config --global user.name "Travis-CI"
 - git config --global push.default simple
 - git config credential.helper "store --file=.git/credentials"
+- git config merge.defaultToUpstream true
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 - git remote set-url origin https://github.com/nicolindemann/pizza.de-dealer.git
 - git checkout -b data
@@ -13,10 +14,10 @@ before_script:
 - git pull origin -q
 script:
 - date +%s > updated
+- date +%s
 - git add .
 - git commit -m "New Data"
-- git fetch
-- git merge --no-edit
+- git merge origin/data
 - git push --set-upstream origin data
 env:
   global:
