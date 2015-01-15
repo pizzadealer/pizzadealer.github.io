@@ -8,7 +8,7 @@ before_script:
 - git config credential.helper "store --file=.git/credentials"
 - git config merge.defaultToUpstream true
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-- git remote set-url origin https://github.com/nicolindemann/pizza.de-dealer.git
+- git remote set-url origin https://github.com/pizzadealer/pizzadealer.github.io.git
 - git checkout -b data
 - git fetch
 - git pull origin -q
