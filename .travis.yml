@@ -21,7 +21,7 @@ script:
 - git push origin data -f
 env:
   global:
-  - secure: cXVToh8m28X15J7KL4suLcZNTdfZChEKbiNLPIT+tj/8rih3Irojc023WSt1/+j8aSEOLd6tZO46alyeRhOQkTXX4O+Src++DRB3FfPBqkqLjiXRCr16UWZnQ5XzZ4Er7Rsn5XRseQJDgh8wGlOnOr+MZxqDDwckW0e+59sctjo=
+  - secure: GRtz0Xsfxa2h7FtJQ7KB6VNZgTLcJwlq+x1GVxuGAESaQn51tdfGIA5J7t6x4QH754rLTESHQNjBR54zhzZEidjk5qxStvYzHmYPFOryV1maW1LT4jDoCHdeNZcQLcjMscOU2SbhMImZ9xZuNL3goPEK3ee4t6WDFduaeJg3Uqw=
 branches:
   only:
   - master
