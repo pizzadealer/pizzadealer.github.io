@@ -1,3 +1,3 @@
-pizza.de-dealer
+pizzadealer.github.io
 ===============
 History of pizza.de deals
